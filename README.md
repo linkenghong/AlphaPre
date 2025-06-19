@@ -32,7 +32,7 @@ pretrained checkpoint: [GoogleDrive](https://drive.google.com/file/d/1hzT2-biQhW
 
 
 ### Datasets
-All four datasets in our paper are from [DiffCast](https://https://github.com/DeminYu98/DiffCast).
+All four datasets in our paper are from [DiffCast](https://github.com/DeminYu98/DiffCast).
 You can find the datasets as follows:
 - [SEVIR](https://nbviewer.org/github/MIT-AI-Accelerator/eie-sevir/blob/master/examples/SEVIR_Tutorial.ipynb)
 - [Metnet](https://meteofrance.github.io/meteonet/english/data/rain-radar/)
@@ -58,7 +58,7 @@ python run.py -h
 
 We refer to implementations of the following repositories and sincerely thank their contribution for the community:
 - [OpenSTL](https://github.com/chengtan9907/OpenSTL/blob/OpenSTL-Lightning/README.md)
-- [DiffCast](https://https://github.com/DeminYu98/DiffCast)
+- [DiffCast](https://github.com/DeminYu98/DiffCast)
 
 ## Citation
 ```
