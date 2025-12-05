@@ -14,7 +14,7 @@ This repository contains the part of training and inference code for using Alpha
 ### Environment
 
 ```shell
-conda env create -f env.ymal
+conda env create -f env.yaml
 conda activate alphapre
 ```
 <details close>
