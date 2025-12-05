@@ -425,7 +425,7 @@ class Runner(object):
                             if param.grad is None:
                                 print_log(name, self.is_main)   
     
-                self.accelerator.wait_for_everyone()
+                # self.accelerator.wait_for_everyone()
                 if self.accelerator.sync_gradients:
                     self.accelerator.clip_grad_norm_(self.model.parameters(), 1.0)
                 
@@ -486,7 +486,7 @@ class Runner(object):
             else:
                 self.save()
                 print_log(f" ========= Finisth one Epoch ==========", self.is_main)
-        self.accelerator.wait_for_everyone()
+        # self.accelerator.wait_for_everyone()
         self.accelerator.end_training()
         
     def _get_seq_data(self, batch):
@@ -572,7 +572,7 @@ class Runner(object):
                         self.visiual_save_fn(radar_recon[i], radar_ori[i], osp.join(save_dir, f"{cnt}-{i}/vil"),data_type='vil')
                     save_vis = False
 
-            self.accelerator.wait_for_everyone()
+            # self.accelerator.wait_for_everyone()
             valid_nums += 1
             if not do_test and self.args.valid_limit and valid_nums >= self.args.vlnum:
                 break
